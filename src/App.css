@@ -2,8 +2,46 @@
   text-align: center;
 }
 
+.daoLogo {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.centeredContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Bileşenler arasında boşluk bırakmak için */
+}
+
+.GoogleLoginWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.proposalButton {
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ACE2E1, #F7EEDD);
+  border-color: #fff;
+}
+
+.proposalButton:hover {
+  border-color: white; /* Hover durumunda border rengini beyaz yap */
+}
+
+/* Ekstra stil kuralları */
 .App-logo {
-  height: 40vmin;
+  height: 50vmin;
   pointer-events: none;
 }
 
@@ -35,23 +73,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.GoogleLoginWrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.proposalButton {
-  padding: 10px 20px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  background: linear-gradient(90deg, #ACE2E1, #F7EEDD);
-  border-color: #fff;
-}
-
-.proposalButton:hover {
-  border-color: white; /* Hover durumunda border rengini siyah yap */
 }
