@@ -1,0 +1,115 @@
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #ACE2E1, #F7EEDD);
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;  /* Genişlik ayarlandı */
+    height: 5%;  /* Yükseklik ayarlandı */
+    z-index: 1000;
+  }
+  
+  .daoLogo1 {
+    width: 55px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  
+  nav .title {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #01204E;
+  }
+  
+  nav .title:hover {
+    color: black;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center; /* Vertikal olarak ortalamak için */
+    margin-right: 1rem;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #01204E;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: black;
+  }
+  
+  nav ul li.wallet-li {
+    display: flex;
+    align-items: center; /* Wallet bileşenini diğer öğelerle hizalamak için */
+    margin-left: 0.5rem; /* Diğer öğelerle arada boşluk bırakmak için */
+  }
+  
+  nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+  }
+  
+  nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+  }
+  
+  @media (max-width: 480px) {
+    nav .menu {
+      display: flex;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+    }
+  
+    nav ul.open {
+      display: flex;
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      margin: 0.2rem 0.5rem;
+    }
+  
+    nav ul li a:hover {
+      color: black;
+    }
+  }

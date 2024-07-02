@@ -1,0 +1,26 @@
+.proposals-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .proposals-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .proposal-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .proposal-item h3 {
+    margin: 0 0 10px;
+  }
+  
+  .proposal-item p {
+    margin: 0;
+  }
+  
